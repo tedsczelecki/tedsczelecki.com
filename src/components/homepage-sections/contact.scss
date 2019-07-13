@@ -5,7 +5,31 @@
   display: grid;
   grid-template-columns: 500px 1fr;
 
+  @media all and (max-width: #{$md-breakpoint}) {
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+  }
+
+  @media all and (max-width: #{$xs-breakpoint}) {
+    grid-template-columns: 1fr;
+    grid-gap: $gutter*2;
+  }
+
   &__container {
     background: #f4f4f4;
+  }
+
+  &__message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    text-align: center;
+
+    h3 {
+      font-size: 1.4rem;
+    }
   }
 }

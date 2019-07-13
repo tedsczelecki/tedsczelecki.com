@@ -38,7 +38,7 @@ class ContactForm extends PureComponent {
 
     return (
       <div className="contact-form">
-        <form name="contact" method="POST" netlify="true">
+        <form name="contact" method="POST">
           <input type="hidden" name="form-name" value="contact" />
           <div className="contact-form__item">
             <input
@@ -76,7 +76,7 @@ class ContactForm extends PureComponent {
               className="contact-form__submit"
               type="submit"
             >
-              Send
+              <span>Send</span>
             </button>
           </div>
         </form>

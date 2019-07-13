@@ -34,7 +34,7 @@ class Abilities extends PureComponent {
     super(props);
 
     this.state = {
-      groupsOpen: [],
+      groupsOpen: ['Frontend'],
     }
 
     this.handleGroupToggle = this.handleGroupToggle.bind(this);
@@ -65,12 +65,13 @@ class Abilities extends PureComponent {
         <ContentSection
           className="abilities"
           title="What I know"
-          subTitle="Things I've learnt over the years"
+          subTitle="Things I've taught myself over the years"
         >
           <div className="abilities__copy-container">
             <p className="abilities__copy">
-              Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+              When I started my career, Flash was the biggest and baddest tech out there. Soon after, browsers and the internet became better and faster  and, well, we all know what that did to Flash. I went from building full interactive sites in Flash, to more content centric sites leaning heavily on Javascript (and then CSS) to handle the animations and interactivity. From there I started learning how the backend and servers work and the different ways they communicate with the frontend. I built out REST apis in PHP using MySQL and then moved onto building them with NodeJS using Mongo or Postgres.
             </p>
+            <p>In addition to the web stacks Ive worked on, Ive built out native Android and IOS apps, built CLI tools/ job runners in Java and NodeJS and played around with countless libraries. Using the right tool for the job has been what what leads me down these many&nbsp;paths.</p>
           </div>
           <div className="abilities__skills">
             {Object.entries(experience).map(([group, skills]) => {

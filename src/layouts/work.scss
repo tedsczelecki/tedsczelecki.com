@@ -6,9 +6,23 @@
   max-width: 1080px;
   margin: 0 auto;
 
+  @media all and (max-width: #{$sm-breakpoint}) {
+    padding-top: $gutter * 2 + $sidebar-mobile-height;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 350px 1fr;
+
+    @media all and (max-width: #{$sm-breakpoint}) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__details {
+    @media all and (max-width: #{$sm-breakpoint}) {
+      margin-bottom: $gutter*2;
+    }
   }
 
   &__gallery {
@@ -34,6 +48,10 @@
   }
 
   &__meta {
+
+    @media all and (max-width: #{$sm-breakpoint}) {
+      width: 400px;
+    }
 
     &__item {
       margin-bottom: $gutter/3;

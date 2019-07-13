@@ -2,6 +2,8 @@ import anime from 'animejs';
 import React, { PureComponent } from 'react';
 import { Link } from 'gatsby';
 
+import { SocialIcons } from '../../components/contact';
+
 import './sidebar.scss';
 
 class Sidebar extends PureComponent {
@@ -25,9 +27,7 @@ class Sidebar extends PureComponent {
   }
 
     this.state = {
-      selected: this.props.location && this.props.location.hash
-        ? this.props.location.hash.substr(1)
-        : null
+      selected: this.getSelectedByURL()
     }
 
 
@@ -44,6 +44,21 @@ class Sidebar extends PureComponent {
     }
 
     window.addEventListener('scroll', this.handlePageScroll);
+  }
+
+  getSelectedByURL() {
+
+    const location = this.props.location || window.location;
+
+    if (location && location.hash) {
+      return this.props.location.hash.substr(1);
+    }
+
+    if (location && location.pathname.indexOf('/work') === 0) {
+      return 'work';
+    }
+
+    return null;
   }
 
   getElementTop(id) {
@@ -89,23 +104,33 @@ class Sidebar extends PureComponent {
   }
 
   handlePageScroll(evt) {
-    const topScroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = window.innerHeight / 4;
-    let selected = null;
-    Object.entries(this.anchorRefs).forEach(([refName, ref]) => {
-      const elem = ref.current;
-      if (elem) {
-        const id = elem.href.split('#')[1];
-        const top = offset + this.getElementTop(id) - window.innerHeight;
-        if (top < topScroll) {
-          selected = refName;
-        }
-      }
-    })
 
-    this.setState(() => ({
-      selected
-    }))
+    if (this.isPage({pathname: '/'})) {
+      const topScroll = window.pageYOffset || document.documentElement.scrollTop;
+      const offset = window.innerHeight / 4;
+      let selected = null;
+      Object.entries(this.anchorRefs).forEach(([refName, ref]) => {
+        const elem = ref.current;
+        if (elem) {
+          const id = elem.href.split('#')[1];
+          const top = offset + this.getElementTop(id) - window.innerHeight;
+          if (top < topScroll) {
+            selected = refName;
+          }
+        }
+      })
+
+      this.setState(() => ({
+        selected
+      }))
+    }
+  }
+
+  isPage({ pathname, exactMatch = true }) {
+    const location = this.props.location || window.location;
+    return exactMatch
+      ? location.pathname === pathname
+      : location.pathname.indexOf(pathname) === 0
   }
 
   scrollToElement({
@@ -129,10 +154,28 @@ class Sidebar extends PureComponent {
       selected
     } = this.state;
 
+    const isWorkPage = this.isPage({
+      exactMatch: false,
+      pathname: '/work',
+    });
+
+    const isMobile = window.matchMedia("(max-width: 980px)").matches
+
     return (
       <div className="sidebar">
         <div className="sidebar__title">
-          Ted Sczelecki
+          <Link to="/">
+            Ted Sczelecki
+          </Link>
+
+          { isWorkPage && isMobile && (
+              <Link
+              className="sidebar__back"
+              to="/#the-work"
+            >
+              <span>All Work</span>
+            </Link>
+          )}
         </div>
         <nav className="sidebar__nav">
           <span>
@@ -185,6 +228,9 @@ class Sidebar extends PureComponent {
              </Link>
           </span>
         </nav>
+        <div className="sidebar__social-icons">
+          <SocialIcons />
+        </div>
       </div>
     )
   }

@@ -3,6 +3,10 @@
 .hero {
   position: relative;
 
+  @media all and (max-width: #{$sm-breakpoint}) {
+    z-index: 999;
+  }
+
   &__content {
     position: absolute;
     left: 50%;
@@ -19,6 +23,11 @@
       text-align: center;
       margin-bottom: 5px;
       font-size: 3.5rem;
+      width: 585px;
+
+      @media all and (max-width: 585px) {
+        width: 100%
+      }
 
       span {
         color: $brand-secondary;

@@ -9,8 +9,56 @@
   background: $brand-primary;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 160px 1fr;
-  justify-items: center;
+  grid-template-rows: 70px 1fr 20px;
+  justify-items: start;
+
+  @media all and (max-width: #{$sm-breakpoint}) {
+    height: $sidebar-mobile-height;
+    width: 100vw;
+    z-index: 99;
+    display: flex;
+    padding: $gutter/3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__back {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -7px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 25px;
+    display: block;
+
+    &:before {
+      @include transition(transform);
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath fill='%23FFFFFF' d='M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 15px;
+      height: 15px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top:-10px;
+    }
+
+    &:hover {
+      &:before {
+        transform: translateX(-5px);
+      }
+    }
+
+    span {
+      transform: translateY(-2px);
+      display: block;
+    }
+  }
 
   //&__image {
   //  width: 160px;
@@ -40,8 +88,12 @@
   //}
 
   &__nav {
-    padding-top: $gutter * 2;
     justify-self: start;
+    align-self: center;
+
+    @media all and (max-width: #{$sm-breakpoint}) {
+      display: none;
+    }
 
     span {
       display: block;
@@ -79,10 +131,36 @@
     }
   }
 
+  &__social-icons {
+    @media all and (max-width: #{$sm-breakpoint}) {
+      position: absolute;
+      top: 13px;
+      right: 25px;
+
+      .social-icons {
+        grid-template-columns: repeat(3, 25px);
+        a {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+
   &__title {
     color: #fff;
     justify-self: start;
     text-transform: uppercase;
     font-size: 1.8rem;
+    font-weight: 400;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media all and (max-width: #{$sm-breakpoint}) {
+      font-size: 1.4rem;
+    }
   }
 }

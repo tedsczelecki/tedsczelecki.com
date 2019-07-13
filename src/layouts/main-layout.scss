@@ -5,4 +5,9 @@
   display:grid;
   grid-template-columns: $sidebar-width 1fr;
   min-height: 100vh;
+
+  @media all and (max-width: #{$sm-breakpoint}) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }

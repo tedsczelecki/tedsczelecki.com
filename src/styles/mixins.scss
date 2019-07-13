@@ -9,11 +9,35 @@
   border: solid 2px $brand-primary;
   font-size: 1.1rem;
   cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    @include transition(left);
+    content: '';
+    width: 120%;
+    height: 120%;
+    background: $brand-secondary;
+    position: absolute;
+    top: -10%;
+    left: -130%;
+    transform: skew(-10deg, 0);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  span {
+    position: relative;
+    z-index:3;
+  }
 
   &:hover {
-    border-color: $brand-secondary;
-    background: transparent;
-    color: $brand-primary
+    color: $brand-primary;
+
+    &:before {
+      left: -10%
+    }
   }
 }
 

@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 
 import { MainLayout } from '../layouts';
 import { NextPrevProject } from '../components/work';
+import { SEO } from '../components/helpers';
 import { Title } from '../components/text';
 
 import './work.scss';
@@ -34,8 +35,16 @@ class WorkPage extends PureComponent {
       title,
     } = this.props.pageContext;
 
+    const descDiv = document.createElement('div')
+    descDiv.innerHTML = description;
+    const textDescription = descDiv.textContent || descDiv.innerText || '';
+
     return (
       <MainLayout>
+        <SEO
+          title={`${title} - ${subTitle} • Ted Sczelecki`}
+          description={textDescription}
+        />
         <div className="work-page">
           <Title
             subTitle={subTitle}

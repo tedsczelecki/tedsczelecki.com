@@ -8,6 +8,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: $gutter/2;
 
+    @media all and (max-width: #{$sm-breakpoint}) {
+      grid-template-columns: 1fr 1fr;
+    }
+
     &__item {
       cursor: none;
     }

@@ -9,7 +9,7 @@ class TheWork extends PureComponent {
   render() {
     return (
       <ContentSection
-        subTitle="Hand picked projects I've worked on"
+        subTitle="Hand picked projects I've built"
         title="The Work"
         className="the-work"
       >

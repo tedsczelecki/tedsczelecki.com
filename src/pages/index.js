@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 
+import { SEO } from '../components/helpers';
 import { MainLayout } from '../layouts';
 import {
   About,
@@ -19,6 +20,7 @@ class Homepage extends PureComponent {
     } = this.props;
     return (
       <MainLayout location={location}>
+        <SEO />
         <section id="hero">
           <Hero />
         </section>

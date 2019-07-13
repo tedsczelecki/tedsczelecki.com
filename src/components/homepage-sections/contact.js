@@ -1,18 +1,12 @@
 import React, { PureComponent } from 'react';
 
-import { ContactForm } from '../contact';
+import { ContactForm, SocialIcons } from '../contact';
 import { ContentSection } from '../layout';
 
 import './contact.scss';
 
 class ContactSection extends PureComponent {
-
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-
     return (
       <div className="homepage-contact__container">
         <ContentSection
@@ -21,7 +15,11 @@ class ContactSection extends PureComponent {
           title="Say Hello"
         >
           <div className="homepage-contact__message">
-
+            <h3>Want to sat hi?</h3>
+            <p>Shoot me an email or <br/>Check me out on the social platforms</p>
+            <SocialIcons
+              fillColor="#000000"
+            />
           </div>
           <div className="homepage-contact__form">
             <ContactForm />
