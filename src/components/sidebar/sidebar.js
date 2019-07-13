@@ -61,6 +61,10 @@ class Sidebar extends PureComponent {
 
   async handleClick(evt) {
 
+    if (!this.props.location || !this.props.location.pathname) {
+      return true;
+    }
+
     const {
       target: {
         href
@@ -86,7 +90,7 @@ class Sidebar extends PureComponent {
 
   handlePageScroll(evt) {
     const topScroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = 100;
+    const offset = window.innerHeight / 4;
     let selected = null;
     Object.entries(this.anchorRefs).forEach(([refName, ref]) => {
       const elem = ref.current;

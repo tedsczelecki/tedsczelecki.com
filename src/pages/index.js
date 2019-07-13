@@ -4,6 +4,7 @@ import { MainLayout } from '../layouts';
 import {
   About,
   Abilities,
+  Contact,
   Hero,
   TheWork,
 } from '../components/homepage-sections';
@@ -31,6 +32,7 @@ class Homepage extends PureComponent {
           <TheWork />
         </section>
         <section id="contact">
+          <Contact />
         </section>
       </MainLayout>
     )

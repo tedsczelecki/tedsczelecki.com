@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 
-import { Title } from '../text';
+import { ContentSection } from '../layout';
 import headshotImage from './images/headshot.jpg';
 
 import './about.scss';
@@ -9,11 +9,11 @@ class About extends PureComponent {
   render() {
 
     return (
-      <div className="about">
-        <Title
-          subTitle="A little about me"
-          title="Hey!"
-        />
+      <ContentSection
+        className="about"
+        subTitle="A little about me"
+        title="Hey!"
+      >
         <div className="about__content">
           <div className="about__headshot">
             <img src={headshotImage} alt="Ted Sczelecki"/>
@@ -24,7 +24,7 @@ class About extends PureComponent {
             <p>On the frontend, I have a passion to build out different UX flows and interfaces to see what works best. There is always a balance in showing just the right amount of content and giving the user adequate functionality/customization so that the user can access everything they need quickly. Getting user feedback is invaluable when building user facing products but knowing why they are asking for a feature is even more important.</p>
           </div>
         </div>
-      </div>
+      </ContentSection>
     )
   }
 }

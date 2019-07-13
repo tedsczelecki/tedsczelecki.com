@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.homepage-contact {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+
+  &__container {
+    background: #f4f4f4;
+  }
+}

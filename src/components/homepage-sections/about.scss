@@ -2,7 +2,6 @@
 @import "../../styles/mixins";
 
 .about {
-  @include section;
 
   &__content {
     display: grid;

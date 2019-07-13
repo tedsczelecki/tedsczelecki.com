@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.contact-form {
+  width: 100%;
+
+  &__input, &__textarea {
+    @include transition(background);
+    width: 100%;
+    font-size: 1rem;
+    padding: $gutter/2;
+    border: none;
+    border-bottom: solid 1px #999;
+    outline: none;
+    background: #f2f2f2;
+
+    &:focus {
+      background: #efefef;
+    }
+  }
+
+  &__item {
+    margin-bottom: $gutter/2;
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+}
