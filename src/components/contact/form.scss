@@ -4,6 +4,11 @@
 .contact-form {
   width: 100%;
 
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   &__input, &__textarea {
     @include transition(background);
     width: 100%;
@@ -21,6 +26,10 @@
 
   &__item {
     margin-bottom: $gutter/2;
+  }
+
+  &__submit {
+    @include cta;
   }
 
   &__textarea {

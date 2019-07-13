@@ -1,5 +1,22 @@
 @import "./variables";
 
+@mixin cta {
+  @include transition;
+  display: block;
+  padding: $gutter/2 $gutter;
+  color: #fff;
+  background: $brand-primary;
+  border: solid 2px $brand-primary;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $brand-secondary;
+    background: transparent;
+    color: $brand-primary
+  }
+}
+
 @mixin section {
   padding: $gutter * 2;
 }
