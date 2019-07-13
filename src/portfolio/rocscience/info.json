@@ -1,0 +1,17 @@
+{
+  "title": "Rocscience",
+  "subTitle": "Like a Rock",
+  "description": "<p>Rocscience is a software company that provides information on rocks and sediment for engineers and academics for educational purposes. This site has several products and a wide range of content, from software info, news and events, to product info. This site looks identical down to IE6 with only some small specific style changes in the navigation. There are over 30 different templates on the site and it was my first project where I lead the frontend development. Until the day it was taken down, it looked and functioned flawlessly, withstanding the test of time.</p>",
+  "info": {
+    "date": "June 1 2010",
+    "categories": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "client": "Rocscience",
+    "company": "Dashboard",
+    "companyUrl": "http://www.dashboard.ca"
+  },
+  "slug": "rocscience"
+}

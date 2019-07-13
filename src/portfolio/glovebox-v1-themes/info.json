@@ -1,0 +1,19 @@
+{
+  "title": "Glovebox v1 Themes",
+  "subTitle": "Automotive Sites",
+  "description": "<p>These were the themes on the Glovebox system when it launched. When the first site launch on Glovebox in 2011, the web was just starting to really adopt the new standards in html5 and css3. Because of this, all of these sites had images for everything that is now done with css (rounded corners and background gradients to name a few).</p><p>This was the largest project I had ever taken on. It was not only a standard front-end site build, it was also creating the backend hooks and then hooking everything together. These sites are 100% compatible down to IE7 (which we all know is super fun). This was the first time I had built a production jQuery plugin.</p>",
+  "info": {
+    "date": "September 1 2011",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "php",
+      "mobile",
+      "glovebox"
+    ],
+    "company": "Glovebox",
+    "companyUrl": "http://www.gloveboxcms.com"
+  },
+  "slug": "glovebox-v1-themes"
+}

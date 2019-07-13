@@ -1,0 +1,18 @@
+{
+  "title": "Choose Nissan",
+  "subTitle": "Provicial sales site",
+  "description": "<p>‘Choose Nissan’ was a site developed for Nissan Canada to feature their monthly specials, which differ across Canada So, the user is automatically directed to their region from a landing page where they must enter their postal code. There were 5 regional sites in total with one being in English and French.</p><p>It was relatively easy to accomplish responsiveness using Foundation and there wasn't much custom javascript to do, except the dealer locator. The site is built on Glovebox, so most of the backend was already available - I just had to write some php to get custom info from the database. In addition to html and php, there were a few tools written in Python to populate certain content on the site.</p>",
+  "info": {
+    "date": "June 15 2013",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "responsive",
+      "glovebox"
+    ],
+    "client": "Nissan",
+    "company": "Dashboard"
+  },
+  "slug": "choose-nissan"
+}

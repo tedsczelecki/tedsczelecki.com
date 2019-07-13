@@ -1,0 +1,8 @@
+@import '../styles/normalize';
+@import '../styles/variables';
+
+.main-layout {
+  display:grid;
+  grid-template-columns: $sidebar-width 1fr;
+  min-height: 100vh;
+}

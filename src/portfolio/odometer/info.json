@@ -1,0 +1,18 @@
+{
+  "title": "Odometer",
+  "subTitle": "Collecting User Data",
+  "description": "<p>Odometer is the big data component of the Octane platform. It is a simple script that you embed on a site which will collect clickstream data for each user that visits the dealer's site. <p><p>Before starting on this, I had only done a little work with MongoDB with very few entries. Odometer has millions of entries and I needed to run large queries with analysis. I ended up using the built-in Mongo functions, MapReduce and Aggregation, to run the queries and analyse the data in one task. The output data was saved separately, so I can query it for the front end later on. I learned a lot about the internals on Mongo and how its indexes work, which sped up the queries in a very noticeable way.</p>",
+  "info": {
+    "date": "March 15 2015",
+    "categories": [
+      "NodeJS",
+      "Angular",
+      "HTML/CSS",
+      "Javascript",
+      "MongoDB"
+    ],
+    "company": "Dashboard",
+    "url": "https://www.convertwithoctane.com/#!/products/odometer"
+  },
+  "slug": "odometer"
+}

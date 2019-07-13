@@ -1,0 +1,19 @@
+{
+  "title": "Glovebox v2 Themes",
+  "subTitle": "Automotive Sites",
+  "description": "<p>This is the second version of the themes that are used for dealers on the Glovebox system. In this version, the css framework and how the themes were structured, changed. Incorporating Foundation gave us the responsiveness we wanted. With the custom sass hierarchy I built, it gave us the ease of extending themes.</p><p>These were the first responsive dealer sites on any system in Canada and it was no easy task. The hardest part of this build was definitely the navigation. I wanted to use the built in Foundation navigation, but the html structure was very limiting, especially when creating the drop downs on the full sized site. With a lot of perseverance, patience and a little magic, I found a solid solution and now it functions as was intended.</p>",
+  "info": {
+    "date": "May 1 2013",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "responsive",
+      "java",
+      "glovebox"
+    ],
+    "company": "Glovebox",
+    "companyUrl": "http://www.gloveboxcms.com"
+  },
+  "slug": "glovebox-v2-themes"
+}

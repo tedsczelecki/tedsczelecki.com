@@ -1,0 +1,19 @@
+{
+  "title": "The Grid TO",
+  "subTitle": "Toronto Neighbourhoods",
+  "description": "<p>The Grid was a relaunch of the free magazine `Eye Weekly` in Toronto. This was, and still is, the largest site that I have ever worked on, in respect to the amount of views and amount of content. The site was built on WordPress with BuddyPress integration for user profiles.</p>",
+  "info": {
+    "date": "April 15 2011",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "wordpress",
+      "php"
+    ],
+    "client": "Torstar",
+    "company": "Dashboard",
+    "companyUrl": "http://www.dashboard.ca"
+  },
+  "slug": "the-grid-to"
+}

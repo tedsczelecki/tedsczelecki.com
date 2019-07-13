@@ -1,0 +1,19 @@
+{
+  "title": "The Orange Difference",
+  "subTitle": "A Different Bank",
+  "description": "<p>The Orange Difference was built for ING Direct Canada to create an online version of their public accountability pdf document. This site had to be built in html so it could be ported to different servers easily. The static site, mixed with the amount of content, caused it to be a long and tedious build. On top of all that, it also had to be in English and French.</p><p>Due to the uniqueness of the site, I could not use any frameworks so I really had to flex my brain on how to achieve the transition effects, loading the content, and switching from desktop to mobile.</p>",
+  "info": {
+    "date": "June 1 2013",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "responsive",
+      "mobile"
+    ],
+    "client": "ING Direct Canada",
+    "company": "Dashboard",
+    "companyUrl": "http://www.dashboard.ca"
+  },
+  "slug": "the-orange-difference"
+}

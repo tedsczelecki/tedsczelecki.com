@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.the-work {
+  @include section;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $gutter/2;
+
+    &__item {
+      cursor: none;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__text-hover {
+    position: fixed;
+    top: -100vh;
+    left: -100vw;
+    font-size: 1.5rem;
+    line-height: 1;
+
+    &__sub-title {
+      font-size: 0.6em;
+      position: absolute;
+      top: 39px;
+      left: 0;
+      box-shadow: 0
+    }
+
+    &__title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 700;
+    }
+
+    span {
+      display: block;
+      background: #fff;
+      padding: $gutter/4;
+    }
+  }
+}

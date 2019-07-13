@@ -1,0 +1,7 @@
+@import '../../styles/mixins';
+
+.text {
+  &__title {
+    @include section-title;
+  }
+}

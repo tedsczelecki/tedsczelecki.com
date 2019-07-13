@@ -1,0 +1,14 @@
+{
+  "title": "Walmart BlackWeb",
+  "subTitle": "Find the Tone",
+  "description": "<p>I was really excited when I landed this project because I had a chance to try my hand at building a native android app, which I hadn’t built before so I had to learn quickly. This app was for  an installation promoting Walmart’s BlackWeb speakers.</p><p>A person would get into a booth and click an icon corresponding to which speaker the sounds came out of. There were two rounds in the app. The first round speakers were in the 4 corners of the booth playing tones and the second, playing music through Bluetooth headphones. In the first round there needed to be a speaker in each corner. Initially, I had 4 single channel bluetooth speakers where the app would randomize which speaker became connected. The first issue that came up, was that once a speaker connected through Bluetooth, a connecting sound would play from that speaker and there would be a small delay before playing the tone. After wasting days on trying to figure out how to turn off the connection sound, I realized I needed another idea. I ended up switching to 2 dual channel speakers, connecting one through the headphone jack and the other through Bluetooth. Since each speaker had a left and right channel I was able to mimic the sound coming out of all four corners of the room, and success! (or so I thought...)</p><p>While everything worked well the first and sometimes even the second time through, occasionally the speakers would connect to the wrong speaker and as you can probably tell this was difficult to recreate. After over 50 hours of searching Google and Stackoverflow, I finally figured out the issue was due to the newer version of the Android MediaPlayer library. Once switching back to V4, everything worked seamlessly and it was a feeling of accomplishment that I will never forget. (Check out this stackoverflow question for a full explanation.)</p>",
+  "info": {
+    "date": "August 1 2015",
+    "categories": [
+      "android"
+    ],
+    "client": "Traffik Group",
+    "company": "Rebel Pixel"
+  },
+  "slug": "walmart-blackweb"
+}

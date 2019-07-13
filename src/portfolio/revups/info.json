@@ -1,0 +1,18 @@
+{
+  "title": "Revups",
+  "subTitle": "Promotional App Store",
+  "description": "<p>This was one of the most enjoyable and interesting projects that I ever worked on, even though it had its fair share of gotchas and challenges. A dealer has access to an admin area to build and completely customize a page takeover. After embedding a javascript snippet on their site, they have full control of the pages the takeover shows up on, the frequency and the start and end dates of the campaign.</p><p>Since there are over 30 different modules, I wanted to create a framework that builds the modules as quick as possible and for each one to maintain consistency. The idea was that all of the boilerplate would be done in the framework, so you would just need to build the specific functionality and style each module, speeding up the build time in the process I accomplished this by building an event and object based solution that was easy to build new modules and track the events within the module. Simply override a function or listen for an event and the module could customize the way it handles user actions.</p>",
+  "info": {
+    "date": "January 15 2015",
+    "categories": [
+      "NodeJS",
+      "HTML/CSS",
+      "Javascript",
+      "Postgres",
+      "Octane"
+    ],
+    "company": "Dashboard",
+    "url": "https://www.convertwithoctane.com/#!/products/revups"
+  },
+  "slug": "revups"
+}

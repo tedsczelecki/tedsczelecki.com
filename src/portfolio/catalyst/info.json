@@ -1,0 +1,19 @@
+{
+  "title": "Catalyst",
+  "subTitle": "Web + Mobile Chat",
+  "description": "<p>From the day started working on Glovebox at Dashboard, we were always asked to embed third party chat systems onto our clients websites. In my opinion, the majority of them looked and functioned like garbage, and I always wanted to build a better version. After going to NADA (the largest dealer conference in North America), I set off to start building  a call tracking software using the Octane framework, which didn't last long. I soon pivoted to building a full-blown chat app, but with a little twist. Imagine, instead of  having to be physically on the computer to see and respond to chatting visitors on your site, you were able to forward the message to your phone via SMS and MMS. I used the Twilio api to forward messages to the dealer or the user if their cell number was in the system. I used NodeJS and Socket.io to provide the realtime chat and the Twilio NodeJS module to interact with Twilio. However, there were a few hardships along the way;  one of the most difficult to overcome, was what to build the criteria on, i.e. when or if to forward the message. There were a couple of iterations on this, but I ended up creating something elegant that solved chat forwarding and as a bonus, made everything easier to read.</p><p>I teamed up with a colleague to assist with the interface and design of the admin area and the chat that appears on a dealer's site. Everything ended up looking exceptionally crisp and it was extremely easy to use. We built it into the Octane platform to provide a seamless integration to the other products using the platform. While this never went to production, it was a great side project built from scratch by myself and completed a beta version.</p>",
+  "info": {
+    "categories": [
+      "NodeJS",
+      "HTML/CSS",
+      "Postgres",
+      "Angular",
+      "Javascript",
+      "Octane"
+    ],
+    "client": "Dashboard",
+    "company": "Rebel Pixel",
+    "date": "March 4 2016"
+  },
+ "slug": "catalyst"
+}

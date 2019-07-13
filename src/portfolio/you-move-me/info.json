@@ -1,0 +1,22 @@
+{
+  "title": "You Move Me",
+  "subTitle": "Moving Efficiently",
+  "description": "<p>This site was for the launch of the new brand You Move Me, located in both the US and Canada. This site had a lot of firsts for me which included: the first non automotive site and one that needed a blog engine on Glovebox; the first time I had used Foundation css framework; and the first time I had coded (a somewhat) responsive layout. With their business model, the need for franchises to have their own site within the corporate site was neccessary to be built into Glovebox.</p><p>I had to build a blog engine into Glovebox, which mainly included creating a taxonomy schema and all the hooks for that into Glovebox. When it came to the layout, the sidebar was the most difficult part. In the end, I used  javascript to manipulate the layout on document load (something that I cringe at the thought of, but sometimes there’s no other way).</p>",
+  "info": {
+    "date": "May 1 2013",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "responsive",
+      "php",
+      "mobile",
+      "glovebox"
+    ],
+    "client": "You Move Me",
+    "company": "Dashboard",
+    "companyUrl": "http://www.dashboard.ca",
+    "url": "http://www.youmoveme.com"
+  },
+  "slug": "you-move-me"
+}

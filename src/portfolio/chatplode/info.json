@@ -1,0 +1,17 @@
+{
+  "title": "Chatplode",
+  "subTitle": "Sharing files",
+  "description": "<p>Chatplode was a business venture, where the client wanted to allow a user to upload an image and chat about it for up to 24 hours. The concept was very simple, and I had to do a little design work since a Themeforest theme was provided. The difficult part was creating a production site built with NodeJS and MongoDB.</p><p>This was my first site that went into production which was built on Node and Mongo. On top of that, I had to figure out how to push a NodeJS live on a rackspace server. I ended up writing everything from scratch so that I could learn how to build a Node project from the ground up. In the end, I added a few extra features within the chat like emoticons and changing your chat color. Unfortunately, the client has since taken the site down.</p>",
+  "info": {
+    "date": "January 15 2013",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "nodejs",
+      "mongodb"
+    ],
+    "company": "Personal"
+  },
+  "slug": "chatplode"
+}

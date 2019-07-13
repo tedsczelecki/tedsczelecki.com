@@ -1,0 +1,19 @@
+{
+	"title": "Fletchers",
+	"subTitle": "BBQ Sausages!",
+	"description": "<p>The Fletchers site was for their brand launch in Canada. It was a relatively simple site to show off their products, create some tasty recipes and BBQ tips for their BBQ leagues.</p><p>The site was built with Foundation and built on Glovebox, and because of that it was a nice quick build with little problems. A difficulty I did encounter was with angled text in the big daddy, where I wanted to use the `rotate` css property, so it would be able to be editable through Glovebox. In the end, I found a happy medium between font size and position.</p>",
+	"info": {
+		"date": "June 14 2013",
+		"categories": [
+			"html",
+			"css",
+			"javascript",
+			"responsive",
+			"glovebox"
+		],
+		"client": "Sofina",
+		"company": "Dashboard",
+		"url": "http://www.fletchers.com"
+	},
+	"slug": "fletchers"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Villaggio",
+  "subTitle": "Great Sandwich Recipes",
+  "description": "<p>This was my first experience using Drupal to build a site. It was a straight forward build, but Drupal definitely slowed me down, (so as a result, I wasn't a huge fan of Drupal overall.</p><p>It was a one page site to showcase recipes that use the Villaggio bread. Since the map needed to be clicked and hovered over, an SVG was used. This worked well in most browsers, but there were some workarounds that needed to be solved for older browsers and Safari. In the end, I was able to create functionality across all browsers. </p>",
+  "info": {
+    "date": "April 18 2015",
+    "categories": [
+      "wordpress",
+      "html",
+      "css",
+      "javascript"
+    ],
+    "client": "Traffik Group",
+    "company": "Rebel Pixel"
+  },
+  "slug": "villaggio"
+}

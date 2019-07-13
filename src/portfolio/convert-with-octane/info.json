@@ -1,0 +1,18 @@
+{
+  "title": "Convert With Octane",
+  "subTitle": "Sales site",
+  "description": "<p>The grand vision of Octane was to become an app store for auto dealerships. This meant that the code needed to be flexible and allow features to be easily added and removed both, in core services, and the site itself.</p><p>Building Octane and the Octane framework was the most challenging and rewarding learning experience that I have encountered in my career to date. Learning new design patterns, how to scale both with users and products, and learning Angular, which powers the interface, were amongst the largest challenges. We needed a way to share components across multiple products (Glovebox V3 and Revups), but also to have those products be used in isolation. What we came up with was a build process that took smaller files which had only one piece of logic in them, and built them into a larger file to be include on the page. This gave us the ability to override specific Angular directives, functions, and/or views throughout the suite of products.</p>",
+  "info": {
+    "date": "January 15 2015",
+    "categories": [
+      "nodejs",
+      "html",
+      "css",
+      "javascript",
+      "octane"
+    ],
+    "company": "Dashboard",
+    "url": "http://www.convertwithoctane.com"
+  },
+  "slug": "convert-with-octane"
+}
