@@ -197,7 +197,7 @@ class Sidebar extends PureComponent {
               className="sidebar__back"
               to="/#the-work"
             >
-              <span>All Work</span>
+              {/*<span>All Work</span>*/}
             </Link>
           )}
         </div>
