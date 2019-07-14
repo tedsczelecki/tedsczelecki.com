@@ -1,0 +1,21 @@
+{
+  "title": "Techvibes",
+  "subTitle": "Canadian online tech publication",
+  "description": "<p>Techvibes has been the highest quality, most versatile and highest performant site I have built in my career. When I joined Konrad and Techvibes, a stock Wordpress template was in use that had many unused plugins and tons of unused code. After this rebuild, 2 plugins were in use, only code that was in use was running and a 98 on Google PageSpeed was achieved. The whole project has an editorial site, where internal and external authors are able to post; A job board, where companies have profiles and job postings; And a custom admin portal to manage the companies on the job board, manage event ticket purchases and customize job alert algorithms.</p><p>On the editorial site, there were several custom features that made it work well on all devices. The homepage has an adaptive layout. It is fully responsive but when loaded on a touch device slider functionality is improved and content is laid out slightly different to make it easier to use. Initially the homepage had ~85 database queries in order to load and render the content. This was replaced with a custom caching plugin which served static files and saw a huge boost in page load performance.</p><p>For all the sites, I worked very closely with a designer to come up and enforce styles, pixel push the design until it was perfect, and work on treatments of all the imagery. All in all, there are about 10 templates across a wordpress and a PHP site which look and work together seamlessly.</p>",
+  
+  "info": {
+    "date": "March 2018",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "wordpress",
+      "php",
+      "react"
+    ],
+    "client": "Techvibes",
+    "company": "Konrad Group",
+    "companyUrl": "https://www.konrad.com/"
+  },
+  "slug": "techvibes"
+}

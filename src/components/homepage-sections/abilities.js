@@ -34,7 +34,7 @@ class Abilities extends PureComponent {
     super(props);
 
     this.state = {
-      groupsOpen: ['Frontend'],
+      groupsOpen: ['Frontend', 'Backend', 'Everything Else'],
     }
 
     this.handleGroupToggle = this.handleGroupToggle.bind(this);

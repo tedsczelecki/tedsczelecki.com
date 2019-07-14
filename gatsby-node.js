@@ -20,7 +20,7 @@ exports.createPages = async ({graphql, actions}) => {
         query($thumbPath: String!){
             file(relativePath: { eq: $thumbPath }) {
               childImageSharp {
-                fixed {
+                fixed (width: 650, height: 650) {
                   src
                 }
               }

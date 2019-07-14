@@ -1,0 +1,18 @@
+{
+  "title": "Sickkids",
+  "subTitle": "Versus Limits",
+  "description": "<p>I built this landing page for a new Sick Kids campaign when I first started at Konrad Group. It was a highly interactive site that reminded me of the sites I used to build using flash. The landing page was a fully accessible and responsive so everyone would have the same experience. It was built with AngularJS and iframed into a SiteCore project.</p><p>There were several challenges in this from the handling the routing making all elements interactable using the keyboard. Out of all of the screens, the article screens had the most challenges.</p><p>On an article page there was a split screen hero image which was extremely difficult to center the focal point of the image on all screen widths and heights. To solve this we used a convention and best effort to center the focal point at all stages of the app.</p><p>Within the article itself there were embedded videos which wreaked havoc on ios mobile devices. A lot of hair pulling and hacking solved the rendering issues.</p><p>The most difficult feature that was built was making the transition between the pages as seamless and smooth as possible. The transition between an article and listing page, elements would fading in/out and animate up/down/left/right. Each animation needed an in transition and an out transition and had to be generic enough to start the animation from a state of the screens content. This took a lot of tweaking but the end result was very clean.</p><p>Sick Kids has had a large impact on me and my family so I was really cool to be able to work on this campaign.</p>",
+  "info": {
+    "date": "August 2017",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "angularJS"
+    ],
+    "client": "Sickkids",
+    "company": "Konrad Group",
+    "companyUrl": "https://www.konrad.com/"
+  },
+  "slug": "sickkids"
+}

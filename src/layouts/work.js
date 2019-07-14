@@ -62,7 +62,7 @@ class WorkPage extends PureComponent {
               <div className="work-page__meta">
                 <div className="work-page__meta__item">
                   <strong>Project Date</strong>
-                  <span>{format(new Date(date), 'MMMM D YYYY')}</span>
+                  <span>{format(new Date(date), 'MMMM YYYY')}</span>
                 </div>
                 {company && (
                   <div className="work-page__meta__item">
@@ -109,7 +109,7 @@ export const query = graphql`
   query($galleryPath: String!){
       allFile(
         filter: {
-          extension: { regex: "/(jpg)/" }
+          extension: { regex: "/(jpg|png)/" }
           relativeDirectory: { eq: $galleryPath }
         }
       ) {

@@ -67,7 +67,7 @@ class ContactForm extends PureComponent {
               required
               className="contact-form__textarea"
               name="message"
-              placeholder="Have something to say"
+              placeholder="Write me a message"
               onChange={this.handleFieldChange}
             >{message}</textarea>
           </div>

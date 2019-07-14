@@ -1,0 +1,18 @@
+{
+  "title": "Best Life Rewarded",
+  "subTitle": "",
+  "description": "<p>This is a marketing site for Best life rewarded built on Wordpress with minimal plugins and javascript used. I worked with a designer to build this clean four template site with subtle element transitions and animations. The site uses custom post types and custom form plugins to give the users a lot of customization, while still conforming to the templates.</p><p>There wasn’t anything overly challenging with this site but I had a lot of fun added in all the animations. There are elements animating in when a user scrolls down the pages and the navigation transitions out when scrolling down the page and then back in when you start scrolling up. All of this logic was written from scratch to keep the total bundle size as small as possible.</p><p>The sites is was bundled into a docker image for easy development and deployment. It was my first time deploy a Wordpress site with Docker and I highly recommend at least developing Wordpress sites this way. I have had nightmares in the past setting up a local PHP environment on WAMP and MAMP. Using the Docker image made this a breeze.</p>",
+  "info": {
+    "date": "January 2019",
+    "categories": [
+      "html",
+      "css",
+      "javascript",
+      "wordpress"
+    ],
+    "client": "Best Life Rewarded",
+    "company": "Rebel Pixel",
+    "projectURL": "https://www.bestliferewarded.com"
+  },
+  "slug": "best-life-rewarded"
+}
