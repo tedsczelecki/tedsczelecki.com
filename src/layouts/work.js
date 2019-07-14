@@ -35,9 +35,13 @@ class WorkPage extends PureComponent {
       title,
     } = this.props.pageContext;
 
-    const descDiv = document.createElement('div')
-    descDiv.innerHTML = description;
-    const textDescription = descDiv.textContent || descDiv.innerText || '';
+    let textDescription = description;
+
+    if (typeof document !== 'undefined') {
+      const descDiv = document.createElement('div')
+      descDiv.innerHTML = description;
+      textDescription = descDiv.textContent || descDiv.innerText || '';
+    }
 
     return (
       <MainLayout>

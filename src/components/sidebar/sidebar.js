@@ -43,12 +43,24 @@ class Sidebar extends PureComponent {
       })
     }
 
-    window.addEventListener('scroll', this.handlePageScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', this.handlePageScroll);
+    }
+  }
+
+  componentWillUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', this.handlePageScroll);
+    }
   }
 
   getSelectedByURL() {
 
-    const location = this.props.location || window.location;
+    const location = this.props.location || (typeof window !== 'undefined' && window.location) || null;
+
+    if (!location) {
+      return null;
+    }
 
     if (location && location.hash) {
       return this.props.location.hash.substr(1);
@@ -127,10 +139,22 @@ class Sidebar extends PureComponent {
   }
 
   isPage({ pathname, exactMatch = true }) {
-    const location = this.props.location || window.location;
+    const location = this.props.location || (typeof window !== 'undefined' && window.location) || null;
+
+    if (!location) {
+      return false;
+    }
+
     return exactMatch
       ? location.pathname === pathname
       : location.pathname.indexOf(pathname) === 0
+  }
+
+  isMobile() {
+    if (typeof window === 'undefined') {
+      return false;
+    }
+    return window.matchMedia(`(max-width: 980px)`).matches
   }
 
   scrollToElement({
@@ -159,7 +183,7 @@ class Sidebar extends PureComponent {
       pathname: '/work',
     });
 
-    const isMobile = window.matchMedia("(max-width: 980px)").matches
+    const isMobile = this.isMobile();
 
     return (
       <div className="sidebar">
