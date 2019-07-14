@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a3fc3ec-c088-43ae-9763-8be45386f707" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage-sections/abilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage-sections/abilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage-sections/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage-sections/hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage-sections/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage-sections/hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/work/list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/work/list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/work/next-prev-project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/work/next-prev-project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,24 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/portfolio/best-life-rewarded/info.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/contact/form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/homepage-sections/hero.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,11 +70,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/homepage-sections/abilities.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="467">
               <caret line="36" column="59" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/contact/social-icons.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="12" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/sidebar/sidebar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -184,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/components/homepage-sections/about.js" />
         <option value="$PROJECT_DIR$/src/components/homepage-sections/contact.scss" />
         <option value="$PROJECT_DIR$/src/components/contact/social-icons.scss" />
-        <option value="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" />
         <option value="$PROJECT_DIR$/src/components/sidebar/sidebar.js" />
         <option value="$PROJECT_DIR$/src/layouts/work.js" />
         <option value="$PROJECT_DIR$/src/portfolio/techvibes/info.json" />
@@ -200,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/styles/mixins.scss" />
         <option value="$PROJECT_DIR$/src/components/homepage-sections/abilities.scss" />
         <option value="$PROJECT_DIR$/src/components/homepage-sections/abilities.js" />
+        <option value="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" />
       </list>
     </option>
   </component>
@@ -241,7 +236,21 @@
               <item name="tedsczelecki.com" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tedsczelecki.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tedsczelecki.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="homepage-sections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tedsczelecki.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tedsczelecki.com" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tedsczelecki.com" type="b2602c69:ProjectViewProjectNode" />
@@ -332,12 +341,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562290620905</updated>
-      <workItem from="1562290623947" duration="105960000" />
+      <workItem from="1562290623947" duration="106677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105960000" />
+    <option name="totallyTimeSpent" value="106677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1678" y="24" width="1920" height="1057" extended-state="6" />
@@ -534,20 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/contact/social-icons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/sidebar/sidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/section.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -689,6 +684,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="36" column="59" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contact/social-icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/sidebar/sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
         </state>
       </provider>
     </entry>
