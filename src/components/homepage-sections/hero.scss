@@ -16,6 +16,50 @@
     color: #fff;
     text-transform: uppercase;
 
+    &__subtitle {
+
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        display: inline-block;
+        position: relative;
+
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+
+        &:after {
+          content: '•';
+          position: absolute;
+          top: 0;
+          margin-top: -1px;
+          right: -10px;
+        }
+
+        @media all and (max-width: $xs-breakpoint) {
+
+          &:nth-child(2){
+            text-align: center;
+          }
+
+          &:nth-child(3) {
+            text-align: right;
+          }
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      @media all and (max-width: $xs-breakpoint) {
+        width: 100%;
+        margin-top: $gutter/3;
+      }
+    }
 
     &__title {
       border: solid 2px $brand-secondary;
@@ -23,10 +67,11 @@
       text-align: center;
       margin-bottom: 5px;
       font-size: 3.5rem;
-      width: 585px;
+      width: $xs-breakpoint;
 
-      @media all and (max-width: 585px) {
-        width: 100%
+      @media all and (max-width: $xs-breakpoint) {
+        width: 100%;
+
       }
 
       span {

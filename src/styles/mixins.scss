@@ -43,6 +43,10 @@
 
 @mixin section {
   padding: $gutter * 2;
+
+  @media all and (max-width: $sm-breakpoint) {
+    padding: $gutter * 1.5 $gutter;
+  }
 }
 
 @mixin section-title {
@@ -54,6 +58,11 @@
   font-weight: 300;
   margin-top: 0;
   display: block;
+
+  @media all and (max-width: $sm-breakpoint) {
+    margin-bottom: $gutter;
+    font-size: 2rem;
+  }
 
   &:after {
     content: '';

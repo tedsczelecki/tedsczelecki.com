@@ -12,6 +12,15 @@
     color: $brand-primary;
     text-decoration: none;
 
+    @media all and (max-width: #{$sm-breakpoint}) {
+      font-size: 1.4rem
+    }
+
+    @media all and (max-width: #{$xs-breakpoint}) {
+      font-size: 1.1rem;
+      margin-left: $gutter;
+    }
+
     span {
       text-transform: uppercase;
     }
@@ -37,6 +46,11 @@
     padding-right: $gutter/2;
     text-align: right;
     margin-left: auto;
+
+    @media all and (max-width: #{$xs-breakpoint}) {
+      margin-left: 0;
+      margin-right: $gutter;
+    }
 
     &:hover {
       &:before {

@@ -14,8 +14,9 @@ class Hero extends PureComponent {
           <div className="hero__content__title">
             Ted <span>Sczelecki</span>
           </div>
+
           <div className="hero__content__subtitle">
-            Fullstack developer • Problem Solver • Outdoors enthusiast
+            <span>Fullstack developer</span> <span>Problem Solver</span> <span>Outdoors enthusiast</span>
           </div>
         </div>
         <div className="hero__image">

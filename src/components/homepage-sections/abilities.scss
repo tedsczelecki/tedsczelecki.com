@@ -14,6 +14,12 @@
     background: #f4f4f4;
   }
 
+  &__copy-container {
+    @media all and (max-width: #{$sm-breakpoint}) {
+      display: none;
+    }
+  }
+
   &__group {
     transform: translateY(-20px);
 

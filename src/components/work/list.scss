@@ -12,6 +12,10 @@
       grid-template-columns: 1fr 1fr;
     }
 
+    @media all and (max-width: #{$xs-breakpoint}) {
+      grid-template-columns: 1fr;
+    }
+
     &__item {
       cursor: none;
     }
