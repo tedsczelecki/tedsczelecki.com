@@ -15,7 +15,7 @@
     grid-template-columns: 350px 1fr;
 
     @media all and (max-width: #{$sm-breakpoint}) {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(200px, 1fr);
     }
   }
 
@@ -50,13 +50,14 @@
   &__meta {
 
     @media all and (max-width: #{$sm-breakpoint}) {
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
     }
 
     &__item {
       margin-bottom: $gutter/3;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
 
       a {
         color: #333;

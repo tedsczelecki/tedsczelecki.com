@@ -7,7 +7,7 @@
   min-height: 100vh;
 
   @media all and (max-width: #{$sm-breakpoint}) {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(200px, 1fr);
     grid-template-rows: 1fr;
   }
 }

@@ -8,7 +8,8 @@ const writeFile = promisify(fs.writeFile);
 exports.createPages = async ({graphql, actions}) => {
   const { createPage } = actions;
   const workComponent = path.resolve('src/layouts/work.js')
-  const portfolioNames = await readdir(path.join(__dirname, 'src/portfolio'));
+  const portfolioNames = (await readdir(path.join(__dirname, 'src/portfolio')))
+    .filter((name) => name.charAt(0) !== '.' );
 
   const portfolio = [];
 

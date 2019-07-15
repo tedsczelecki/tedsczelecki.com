@@ -34,7 +34,10 @@ class Abilities extends PureComponent {
     super(props);
 
     this.state = {
-      groupsOpen: ['Frontend', 'Backend', 'Everything Else'],
+      groupsOpen: typeof window !== 'undefined' && window.matchMedia(`(max-width: 600px)`).matches
+        ? ['Frontend', 'Backend']
+        : ['Frontend', 'Backend', 'Everything Else'],
+
     }
 
     this.handleGroupToggle = this.handleGroupToggle.bind(this);

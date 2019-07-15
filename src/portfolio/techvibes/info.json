@@ -15,7 +15,8 @@
     ],
     "client": "Techvibes",
     "company": "Konrad Group",
-    "companyUrl": "https://www.konrad.com/"
+    "companyUrl": "https://www.konrad.com/",
+    "projectUrl": "https://techvibes.com"
   },
   "slug": "techvibes"
 }

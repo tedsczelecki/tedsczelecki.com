@@ -48,9 +48,11 @@
       margin-top:-2px;
     }
 
-    &:hover {
-      &:before {
-        transform: translateX(-5px);
+    @media all and (min-width: #{$sm-breakpoint}) {
+      &:hover {
+        &:before {
+          transform: translateX(-5px);
+        }
       }
     }
 
@@ -117,6 +119,10 @@
           height: 18px;
         }
       }
+    }
+
+    @media all and (max-width: #{$xs-breakpoint}) {
+      display: none;
     }
   }
 

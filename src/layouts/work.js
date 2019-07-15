@@ -28,6 +28,7 @@ class WorkPage extends PureComponent {
         company,
         companyUrl,
         date,
+        projectUrl,
       },
       nextProject,
       prevProject,
@@ -79,6 +80,16 @@ class WorkPage extends PureComponent {
                   <div className="work-page__meta__item">
                     <strong>Client</strong>
                     <span>{client}</span>
+                  </div>
+                )}
+                {projectUrl && (
+                  <div className="work-page__meta__item">
+                    <strong></strong>
+                    <span>
+                      <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+                        View site
+                      </a>
+                    </span>
                   </div>
                 )}
               </div>
