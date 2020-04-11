@@ -15,8 +15,8 @@ class ContactSection extends PureComponent {
           title="Say Hello"
         >
           <div className="homepage-contact__message">
-            <h3>Want to sat hi?</h3>
-            <p>Shoot me an email or <br/>Check me out on the social platforms</p>
+            <h3>Want to say hi?</h3>
+            <p>Shoot me an email or <br/>Check me out on social</p>
             <SocialIcons
               fillColor="#000000"
             />
