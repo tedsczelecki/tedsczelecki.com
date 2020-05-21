@@ -17,6 +17,11 @@
 
   &__container {
     background: #f4f4f4;
+
+    > .content-section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   }
 
   &__message {

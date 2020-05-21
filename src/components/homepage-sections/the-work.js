@@ -8,13 +8,15 @@ import './the-work.scss';
 class TheWork extends PureComponent {
   render() {
     return (
-      <ContentSection
-        subTitle="Hand picked projects I've built"
-        title="The Work"
-        className="the-work"
-      >
-        <WorkList />
-      </ContentSection>
+      <div className="the-work">
+        <ContentSection
+          subTitle="Hand picked projects I've built"
+          title="The Work"
+          className="the-work"
+        >
+          <WorkList />
+        </ContentSection>
+      </div>
     )
   }
 }

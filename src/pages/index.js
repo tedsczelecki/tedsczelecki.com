@@ -20,22 +20,24 @@ class Homepage extends PureComponent {
     } = this.props;
     return (
       <MainLayout location={location}>
-        <SEO />
-        <section id="hero">
-          <Hero />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="experience">
-          <Abilities />
-        </section>
-        <section id="the-work">
-          <TheWork />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
+        <div className="homepage">
+          <SEO />
+          <section id="hero">
+            <Hero />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <section id="experience">
+            <Abilities />
+          </section>
+          <section id="the-work">
+            <TheWork />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+        </div>
       </MainLayout>
     )
   }
