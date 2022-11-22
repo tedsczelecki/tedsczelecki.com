@@ -1,0 +1,26 @@
+---
+date: "2022-04-25"
+description: "An completely unique NFT platform. Buy and sell your Grid Gang nfts on an interactive grid."
+excerpt: "I was talking on the phone with a couple friends about crypto land ownership and the metaverse late one night. We were looking at the UI of one site and it reminded me of the “Million dollar homepage” where users were able to purchase a single pixel in a 1000x1000 pixel grid for $1. We talked a bit more about other crypto projects we liked and cby the end of it we had an idea. Think of a mix between million dollar homepage and crypto kitties."
+externalLink: "https://gridgang.io"
+featured: true
+images:
+    - './images/projects/grid-gang/gallery/0.jpg'
+    - './images/projects/grid-gang/gallery/1.png'
+    - './images/projects/grid-gang/gallery/2.png'
+    - './images/projects/grid-gang/gallery/3.png'
+    - './images/projects/grid-gang/gallery/4.png'
+slug: "grid-gang"
+subTitle: "Get onto the Grid"
+thumb:
+    - './images/projects/grid-gang/thumb.jpg'
+title: 'Grid gang'
+---
+
+I was talking on the phone with a couple of friends about crypto land ownership and the metaverse late one night. We were looking at the UI of one site, and it reminded me of the “Million dollar homepage,” where users could purchase a single pixel in a 1000x1000 pixel grid for $1. We talked a bit more about other crypto projects we liked, and by the end, we had an idea. Think of a mix between million dollar homepage and crypto kitties.
+
+I started working on generating an image from a transaction hash the following week. After completing a simple implementation, I moved on to building the UI. We wanted it to be unique, not just another NFT sales site. We wanted a giant interactive grid where you could scroll from one side to the other through drag and drop sounded challenging. I learned a lot about optimizing data and drawing elements on a canvas. There were countless iterations, going from a 100x100 square grid with all the data stored in the app; to a 1024x1024 square grid where the grid only rerenders new squares and the data is streamed from a server through WebSockets.
+
+The backend was built using ApiGateway and Lambda functions and orchestrated using the serverless framework. I chose this direction for a few reasons. The first was cost. We were bootstrapping this whole thing, and I didn’t want to have to pay for servers sitting idle on off-peak times. The second was scalability. I didn’t want to have to manage the infrastructure and scale up servers if the load was high. And third, it was a new way to build an app. Before this project, I had only used serverless to supplement the API with small helper lambda functions (resizing an uploaded image automatically, for example)
+
+This whole thing, from idea to launch, took 151 days. So when I look at what we ended up with and the time spent, I am incredibly proud of myself and the team I worked with for getting up and doing this.
