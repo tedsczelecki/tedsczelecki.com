@@ -21,6 +21,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panic('failed to create posts ', result.errors);
   }
 
+  console.log('LEEENGTH', result?.data?.allMdx?.nodes.length);
+
   result?.data?.allMdx?.nodes?.forEach(node => {
     const slug = node.frontmatter.slug;
     const template = require.resolve(`./src/pages/templates/projects.tsx`);

@@ -9,7 +9,7 @@ aws s3 sync ./public s3://www.tedsczelecki.com/ \
   --cache-control max-age=604800,public \
   --acl public-read
 
-aws cloudfront create-invalidation --distribution-id=E3STOEHQLAOTZ0 --paths /
+aws cloudfront create-invalidation --distribution-id=E3STOEHQLAOTZ0 --paths '/*'
 
 # Set metadata on the files in the bucket
 #aws s3 cp s3://dev.gridgang.io/ \

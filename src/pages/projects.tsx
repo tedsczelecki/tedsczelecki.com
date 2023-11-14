@@ -12,6 +12,7 @@ import { GREEN, ORANGE, YELLOW } from '../constants';
 import workHero from '../images/work-hero.png';
 
 const Projects = ({ data }: PageProps<Queries.WorkPageQuery>) => {
+  console.log('data.featured.nodes', data.featured.nodes);
   return (
     <ContentLayout
       gap="0"
@@ -45,7 +46,7 @@ const Projects = ({ data }: PageProps<Queries.WorkPageQuery>) => {
         <ContentBox>
           <SectionTitle
             color={GREEN}
-            subTitle="The latest and greatest"
+            subTitle="Some older projects that are worth a share"
             title="Honorable mentions"
             mb="5rem"
           />

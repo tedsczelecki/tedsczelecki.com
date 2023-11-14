@@ -15,6 +15,8 @@ const ProjectPage = ({
 }: PageProps<Queries.ProjectPageQuery>) => {
   const { description, images, subTitle, tags, title } =
     data?.mdx?.frontmatter ?? {};
+
+  console.log('IMAGES', data?.mdx?.frontmatter);
   return (
     <ContentLayout
       title={`${title} ${subTitle ? `- ${subTitle}` : ''}`}
