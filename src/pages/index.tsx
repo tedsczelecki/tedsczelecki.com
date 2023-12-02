@@ -57,9 +57,9 @@ const Homepage = ({ data }: PageProps<Queries.FeaturedProjectsQuery>) => (
         >
           <Box>
             <Text>
-              Hey! I’m Ted. I have been building things on the web for 13+
+              Hey! I’m Ted. I have been building things on the web for nearly 15
               years. I started my career building flash sites (rip) at an
-              agency, transitioned into javascript-heavy sites, and never looked
+              ad agency, transitioned into javascript-heavy sites, and never looked
               back. Recently, I have worked with various startups building React
               interfaces and working with design and product teams to create clean, usable UIs.
               From time to time, I build (and actually finish) sites or apps

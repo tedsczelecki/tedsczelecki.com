@@ -116,7 +116,7 @@ const WorkImage = ({
   }, [src]);
 
   return (
-    <Box minWidth={size} position="relative" width={size}>
+    <Box minWidth={size} position="relative" width={size} height={size}>
       <Tint $color={color} />
       <ChakraImage
         boxSize={size}
@@ -126,6 +126,7 @@ const WorkImage = ({
         onMouseOut={handleMouseLeave}
         position="relative"
         ref={imageElementRef}
+        style={{ aspectRatio: 1}}
         src={src}
         zIndex="1"
         width="100%"

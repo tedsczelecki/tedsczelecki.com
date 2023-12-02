@@ -38,13 +38,18 @@ const BlogList = () => {
       display="grid"
       gridTemplateColumns={{
         base: '1fr',
-        md: 'repeat(auto-fit, 300px)',
+        lg: 'repeat(2, minmax(250px, 1fr))',
       }}
       gridGap="4rem"
       justifyContent="center"
       width="100%"
+      maxWidth={{
+        base: "400px",
+        lg: "1000px"
+      }}
+      mx="auto"
     >
-      {data?.map(({ title, thumbnail, description, link }) => {
+      {data?.slice(0,2)?.map(({ title, thumbnail, description, link }) => {
         let htmlOutput: string | null = description;
 
         if (typeof document !== 'undefined') {
@@ -52,15 +57,20 @@ const BlogList = () => {
           div.innerHTML = description;
           const p = div.querySelectorAll('p');
           if (p?.[0]) {
-            htmlOutput = p[0].textContent;
+            const text = p[0].textContent;
+            const truncatedText = text?.split(' ').slice(0, 35).join(' ');
+            if (text && truncatedText) {
+              const isTruncated = truncatedText?.length < text?.length;
+              htmlOutput = `${truncatedText}${isTruncated ? '...' : ''}`
+            }
           }
         }
 
         return (
           <VStack width="100%">
-            <a href={link} target="_blank">
+            <Box as="a" href={link} target="_blank" minHeight={{ base: 'auto', lg :"108px"}}>
               <Heading size="lg">{title}</Heading>
-            </a>
+            </Box>
             <Box p="1rem">
               <a href={link} target="_blank">
                 <WorkImage
@@ -73,14 +83,16 @@ const BlogList = () => {
               </a>
             </Box>
 
-            <Text>{htmlOutput}</Text>
-            <Button
-              onClick={() => window.open(link)}
-              colorScheme={ORANGE.replace('.400', '')}
-              variant="outline"
-            >
-              Keep reading
-            </Button>
+            <Text flex="1">{htmlOutput}</Text>
+            <HStack width="100%" justifyContent="flex-end">
+              <Button
+                onClick={() => window.open(link)}
+                colorScheme={ORANGE.replace('.400', '')}
+                variant="ghost"
+              >
+                Keep reading
+              </Button>
+            </HStack>
           </VStack>
         );
       })}
