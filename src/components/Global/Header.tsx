@@ -57,7 +57,7 @@ const NavLinks = ({ onClick }: NavLinksProps) => (
 
 const NavSocial = () => (
   <>
-    <a href="https://github.com/tedsczelecki" target="_blank">
+    <a href="https://github.com/tedsczelecki" target="_blank" aria-label="View my Github">
       <RiGithubFill size="23" />
     </a>
   </>

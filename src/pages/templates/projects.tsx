@@ -57,9 +57,10 @@ const ProjectPage = ({
             {images
               ?.slice(1)
               .map(
-                images =>
+                (images, i) =>
                   images?.publicURL && (
                     <WorkImage
+                      alt={`${title}  thumbnail ${i + 1}`}
                       color={TRANSPARENT}
                       glitchImage={false}
                       key={images.publicURL}

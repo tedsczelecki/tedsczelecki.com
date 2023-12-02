@@ -9,10 +9,10 @@ import { GREEN, ORANGE, PINK, PURPLE, YELLOW } from '../constants';
 import WorkList from '../components/Work/List';
 import HStack from '../components/Global/HStack';
 // @ts-ignore
-import profileImage from '../images/profile.png';
+import profileImage from '../images/profile.webp';
 import { graphql, navigate, PageProps } from 'gatsby';
 // @ts-ignore
-import homepageHero from '../images/homepage-hero.png';
+import homepageHero from '../images/homepage-hero.webp';
 import { RIGHT } from '../types';
 import ContactForm from '../components/Contact/Form';
 import BlogList from '../components/Blog/List';
@@ -69,7 +69,7 @@ const Homepage = ({ data }: PageProps<Queries.FeaturedProjectsQuery>) => (
             </Text>
           </Box>
           <Box minWidth="350px" maxWidth="350px" transform="translateY(-10px)">
-            <Image src={profileImage} />
+            <Image src={profileImage} alt="Ted Sczelecki" />
           </Box>
         </HStack>
       </ContentBox>

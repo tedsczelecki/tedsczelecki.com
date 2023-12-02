@@ -25,8 +25,9 @@ const WorkGrid = ({ color = GREEN, work }: Props) => {
         return (
           <VStack width="100%">
             <Box py="1rem">
-              <Link to={href}>
+              <Link to={href} aria-label={`View more info about ${title}`}>
                 <WorkImage
+                  alt={`${title} thumbnail`}
                   borderOffset={20}
                   color={color}
                   size="300px"

@@ -74,6 +74,7 @@ const BlogList = () => {
             <Box p="1rem">
               <a href={link} target="_blank">
                 <WorkImage
+                  alt={`${title} thumbnail`}
                   borderOffset={20}
                   color={ORANGE}
                   glitchImage={false}

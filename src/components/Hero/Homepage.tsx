@@ -157,6 +157,7 @@ const HomepageHero = ({
             zIndex="2"
           >
             <Image
+              alt="Architecting and building things on the web"
               src={imageUrl}
               height={rotateImage ? '145%' : '100%'}
               width={rotateImage ? '145%' : '100%'}

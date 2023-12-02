@@ -37,8 +37,9 @@ const WorkCard = ({ color = PINK, work }: Props) => {
       }}
     >
       {thumb?.[0]?.publicURL && (
-        <Link to={`/projects/${slug}`}>
+        <Link to={`/projects/${slug}`} aria-label={`Read more about ${title}`}>
           <WorkImage
+            alt={`${title} thumbnail`}
             color={color}
             src={thumb[0].publicURL}
             size={{
@@ -74,7 +75,9 @@ const WorkCard = ({ color = PINK, work }: Props) => {
           className="actions"
         >
           <Button
-            onClick={() => navigate(`/projects/${slug}`)}
+            as={Link}
+            aria-label={`Read more about ${title}`}
+            to={`/projects/${slug}`}
             colorScheme={color.replace('.400', '')}
             variant="ghost"
           >

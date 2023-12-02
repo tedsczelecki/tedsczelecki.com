@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Script } from 'gatsby';
 import { useLocation } from '@reach/router';
 // @ts-ignore
-import defaultImage from '../../images/profile.png';
+import defaultImage from '../../images/profile.webp';
 
 export type SeoProps = {
   description?: string | null;

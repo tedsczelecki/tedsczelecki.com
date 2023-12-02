@@ -9,7 +9,7 @@ import ContentBox from '../components/Global/ContentBox';
 import WorkGrid from '../components/Work/Grid';
 import { GREEN, ORANGE, YELLOW } from '../constants';
 // @ts-ignore
-import workHero from '../images/work-hero.png';
+import workHero from '../images/work-hero.webp';
 
 const Projects = ({ data }: PageProps<Queries.WorkPageQuery>) => {
   console.log('data.featured.nodes', data.featured.nodes);

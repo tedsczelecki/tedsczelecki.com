@@ -33,6 +33,7 @@ const Tint = styled(Box)<{ $color?: HighlightColors }>`
 `;
 
 type Props = {
+  alt: string;
   borderOffset?: number;
   color?: HighlightColors;
   glitchImage?: boolean;
@@ -54,6 +55,7 @@ const loadImage = (src: string): Promise<HTMLImageElement> => {
 };
 
 const WorkImage = ({
+  alt,
   borderOffset,
   color = PINK,
   glitchImage = true,
@@ -119,6 +121,7 @@ const WorkImage = ({
     <Box minWidth={size} position="relative" width={size} height={size}>
       <Tint $color={color} />
       <ChakraImage
+        alt={alt}
         boxSize={size}
         filter={color === TRANSPARENT ? 'none' : 'grayscale(1)'}
         objectFit="cover"
